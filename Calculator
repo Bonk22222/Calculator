@@ -1,0 +1,27 @@
+def add(a, b):
+    return a + b
+def subtract(a, b):
+    return a - b
+def multiply(a, b):
+    return a * b
+def divide(a, b):
+    return a / b
+choices = ("add/subtract/multiply/divide")
+print(choices)
+while True:
+    math_choice = input("What is your choice?")
+    a = float(input("first number"))
+    b = float(input("second number"))
+    if math_choice == 'add':
+        print(float(add(a, b)))
+    if math_choice == 'subtract':
+        print(float(subtract(a, b)))
+    if math_choice == 'multiply':
+        print(float(multiply(a, b)))
+    if math_choice == 'divide':
+        print(float(divide(a, b)))
+    end = input("Would you like to continue?")
+    if end == 'yes':
+        break
+    if end == 'no':
+        print("alr")
